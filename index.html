@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300&family=Outfit:wght@300&display=swap"
+    rel="stylesheet">
+
+  <head profile="http://www.w3.org/2005/10/profile">
+    <link rel="icon" type="image/png" href="http://example.com/myicon.png">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- displays site properly based on user's device -->
+
+    <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+
+    <title>Frontend Mentor | NFT preview card component</title>
+
+    <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+    <style>
+      body {
+        background-color: black;
+        font-family: 'Noto Sans KR', sans-serif;
+        font-family: 'Outfit', sans-serif;
+      }
+
+      #Background {
+        width: 1440px;
+        height: 900px;
+        margin: 0;
+        padding-top: 30px;
+        background-color: hsl(217, 54%, 11%);
+      }
+
+      .attribution {
+        font-size: 11px;
+        text-align: center;
+        padding-top: 10px;
+        color: gray;
+      }
+
+      .attribution a {
+        color: hsl(228, 45%, 44%);
+        padding-top: 20px;
+      }
+
+      #card {
+        background-color: hsl(216, 50%, 16%);
+        text-align: center;
+        margin-top: 100px;
+        margin-left: 550px;
+        margin-right: 550px;
+        padding-bottom: 20px;
+        border-radius: 13px;
+        box-shadow: 0 0 200px 20px rgba(0, 0, 0, 0.267);
+      }
+
+      #image {
+        border-radius: 13px;
+        display: block;
+        width: 100%;
+        height: auto;
+      }
+
+      h1 {
+        font-size: 25px;
+      }
+
+      #text {
+        color: hsl(215, 51%, 70%);
+        margin-left: 20px;
+        margin-right: 20px;
+        text-align: left;
+        border-bottom: 1px solid hsl(215, 51%, 70%);
+        font-size: 15px;
+      }
+
+      #grid {
+        display: flex;
+        justify-content: space-between;
+        color: hsl(178, 100%, 50%);
+        font-size: 15px;
+      }
+
+      #left {
+        color: hsl(215, 51%, 70%);
+      }
+
+      p {
+
+        box-sizing: border-box;
+        height: 320px;
+        width: 320px;
+        padding-left: 20px;
+        padding-top: 20px;
+
+      }
+
+      .create {
+        text-align: left;
+        margin-left: 20px;
+        margin-top: 15px;
+        color: hsl(215, 51%, 70%);
+      }
+
+      a {
+        color: white;
+        text-decoration: none;
+      }
+
+      a:hover {
+        color: hsl(178, 100%, 50%);
+      }
+
+      .container {
+        position: relative;
+        width: 100%;
+        border-radius: 13px;
+      }
+
+      .overlay {
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        height: 300px;
+        width: 300px;
+        opacity: 0;
+        background-color: hsl(178, 100%, 50%);
+        margin-left: 20px;
+        margin-top: 20px;
+        border-radius: 13px;
+      }
+
+      .container:hover .overlay {
+        opacity: 0.5;
+      }
+
+      #icon {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        -webkit-transform: translate(-50%, -50%);
+        -ms-transform: translate(-50%, -50%);
+        transform: translate(-50%, -50%);
+        text-align: center;
+      }
+    </style>
+  </head>
+
+<body>
+  <div id="Background">
+    <div id="card">
+      <div Class='container'>
+        <p><img id="image" src="images/image-equilibrium.jpg" width="300"></p>
+        <a href="index.html">
+          <div Class='overlay'>
+          <div id='icon'><img src="images/icon-view.svg"></div>
+        </div>
+      </div>
+
+      <div id="text">
+        <h1><a href="index.html">Equilibrium #3429</a></h1>
+        Our Equilibrium collection promotes balance and calm.
+        <div id="grid">
+          <span class="ETH"><br>
+            <img src="images/icon-ethereum.svg" width="10px" height="12px"> 0.041 ETH
+          </span>
+          <span id="left"><br>
+            <img src="images/icon-clock.svg" width="15px">3 days left
+          </span>
+        </div><br>
+      </div>
+
+      <div class="create">
+        <img src="images/image-avatar.png" width="25">
+        Creation of <a href="index.html">Jules Wyvern</a>
+      </div>
+
+      <div class="attribution">
+        Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
+        Coded by <a href="https://www.instagram.com/siruzipsa/">Brokyeom</a>
+      </div>
+    </div>
+</body>
+
+</html>
